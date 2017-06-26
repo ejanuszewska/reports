@@ -1,7 +1,20 @@
+Skip to content
+Features Business Explore Marketplace Pricing
+This repository
+Search
+Sign in or Sign up
+ Watch 1  Star 0  Fork 0 ejanuszewska/bash_task3
+ Code  Issues 0  Pull requests 0  Projects 0 Insights 
+Branch: details Find file Copy pathbash_task3/script4.sh
+5c4ceb4  17 hours ago
+@ejanuszewska ejanuszewska report2
+1 contributor
+RawBlameHistory     
+Executable File  47 lines (38 sloc)  1.04 KB
 #!/bin/bash
 
 clear
-cd /home/ewa/reports/
+cd /home/ewa/bash_task3/
 
 git checkout details
 hash=$(git rev-parse HEAD)
@@ -44,3 +57,5 @@ git add .
 git commit --amend 
 git push origin summary
 git checkout details
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
