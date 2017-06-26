@@ -4,10 +4,10 @@
 clear
 cd /home/ewa/reports/
 
+xml=$(cat systemstats.xml)
+
 git checkout details
 git pull origin details
-
-xml=$(cat systemstats.xml)
 
 CPULOAD=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}')
 echo $CPULOAD

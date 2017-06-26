@@ -3,6 +3,8 @@
 clear
 cd /home/ewa/reports/
 
+xml=$(cat average.xml)
+
 git checkout details
 git pull origin details
 
@@ -32,7 +34,6 @@ done
 CPULOADSAVERAGE=CPULOADS/5
 MEMLOADSAVERAGE=MEMLOADS/5
 
-xml=$(cat average.xml)
 
 DATE=$(date +%Y-%m-%d)
 WEEKDAY=$(date +%u)
