@@ -1,14 +1,14 @@
 <systemstats>
-    <date></date>
-    <weekday></weekday>
-    <time></time>
-    <cpuload></cpuload>
-    <memload></memload>
-    <user>
+    <date></date>            <!-- dd.mm.yyyy -->
+    <weekday></weekday>      <!-- full weekday name -->
+    <time></time>            <!-- hh:mm:ss -->
+    <cpuload></cpuload>      <!—- current total CPU load -->
+    <memload></memload>      <!—- current total memory load -->
+    <user>                   <!-- multiply user block for every currently logged user -->
        <username></username>
-       <process>
-           <pid></pid>
-           <cmd></cmd>
+       <process>             <!-- multiply process block for every process of this user -->
+           <pid></pid>      
+           <cmd></cmd>       <!—- command/application name -->
        </process>
    </user>
 </systemstats>
