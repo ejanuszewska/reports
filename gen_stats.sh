@@ -2,7 +2,10 @@
 
 
 clear
-cd /home/ewa/bash_task/
+cd /home/ewa/bash_task3/
+
+git checkout details
+git pull origin details
 
 xml=$(cat systemstats.xml)
 
@@ -39,7 +42,9 @@ xml=${xml/<time>/<time>$TIME}
 xml=${xml/<cpuload>/<cpuload>$CPULOAD}
 xml=${xml/<memload>/<memload>$MEMLOAD}
 echo $xml > systemstats3.xml
-git checkout details
-git add .
+
+git add systemstats3.xml
 git commit -m "report2"
 git push origin details
+
+git checkout master
